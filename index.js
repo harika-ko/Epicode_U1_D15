@@ -53,3 +53,81 @@ for (let i = 0; i < strArray.length; i++) {
     console.log(strArray[i])
 }
 
+//26) Create an array with 100 random numbers in it
+
+let randomArr = []
+let maxNum = 100
+for (let i = 0; i < maxNum; i++) {
+    let randomNumbers = Math.floor(Math.random() * maxNum)
+    randomArr.push(randomNumbers)
+}
+console.log(randomArr)
+
+//27) Write a function to get the maximum and minimum values from the previously created array
+
+function getMaxAndMin(arr) {
+    let max = arr[0]
+    let min = arr[0]
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        } else if (arr[i] < min) {
+            min = arr[i]
+        }
+    }
+    return { max, min }
+}
+
+console.log(getMaxAndMin(randomArr))
+
+//28) Create an array of arrays, in which every array has 10 random numbers
+
+let arrayOfArrays = []
+
+for (let i = 0; i < 10; i++) {
+    let innerArray = []
+    for (let j = 0; j < 10; j++) {
+        innerArray.push(Math.floor(Math.random() * 10))
+    }
+    arrayOfArrays.push(innerArray)
+}
+
+console.log(arrayOfArrays)
+
+//29) Create a function that gets 2 arrays as parameters and returns the longest one
+
+function longestArr(arr1, arr2) {
+    if (arr1.length > arr2.length) {
+        return arr1
+    } else
+        return arr2
+}
+
+console.log(longestArr([1, 2, 3, 4], [5, 6, 7, 8, 9, 10]))
+
+//30) Create a function that gets 2 arrays of numbers as parameters and returns the one with the higher sum of values
+
+function higherSum(arr3, arr4) {
+    let sum = 0
+    for (let i = 0; i < arr3.length; i++) {
+        sum = sum + arr3[i]
+    }
+    let sum1 = 0
+    for (let i = 0; i < arr4.length; i++) {
+        sum1 = sum1 + arr4[i]
+    }
+
+    if (sum > sum1) {
+        console.log("The higher sum is from the first array and the sum is", sum)
+    } else
+        console.log("The higher sum is from the second array and the sum is", sum1)
+}
+
+higherSum([1, 2, 3], [4, 5, 6, 7])
+
+
+
+
+
+
