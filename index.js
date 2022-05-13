@@ -127,6 +127,38 @@ function higherSum(arr3, arr4) {
 higherSum([1, 2, 3], [4, 5, 6, 7])
 
 
+//31) Get the element with an id of "container" from the page
+
+let containerNode = document.getElementById("container")
+
+//32) Get every <td> element from the page
+//33) Use a loop for printing the text inside of every <td> element in the page
+
+function tdElements() {
+    let tdNode = document.getElementsByTagName("td")
+    for (let i = 0; i < tdNode.length; i++) {
+        tdNode[i].innerText = "Hello!"
+    }
+}
+
+//34) Write a function to change the heading of the page
+
+function changeHeading() {
+    let headingNode = document.querySelector("h1")
+    headingNode.innerText = "Hello! I am the new Heading"
+}
+
+//35) Write a function to add an extra row to the table
+
+function addRow() {
+
+    let tableNode = document.getElementById("table")
+    let row = tableNode.insertRow()
+    row.innerText = "Hello! I am the new row"
+}
+
+
+
 
 
 
