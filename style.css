@@ -11,3 +11,41 @@
 19) Add a green border to each <td>
 20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
 */
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/*11) Give a maximum width to the body and center it into the page*/
+
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+/*12) Set every h1 to be centered*/
+
+h1 {
+    text-align: center;
+}
+
+/*13) Change the color of each link in the page*/
+
+a {
+    color: hotpink;
+}
+
+/*14) Create a class with a border assigned to it*/
+
+.border-class {
+    border-style: double;
+}
+
+
+/*15) Set the previously created table to have rounded corners*/
+
+table {
+    border-radius: 10px;
+}
