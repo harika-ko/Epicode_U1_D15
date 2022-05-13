@@ -49,3 +49,39 @@ a {
 table {
     border-radius: 10px;
 }
+
+/*16) Add a margin between every paragraph*/
+
+p {
+    margin: 10px;
+}
+
+/*17) Create a class which changes font size and text weight when applied*/
+
+.change-font-text-weight {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*18) Create a class to hide a piece of content*/
+
+.visibility {
+    visibility: hidden;
+}
+
+/*19) Add a green border to each <td>*/
+
+td {
+    border-color: green;
+}
+
+/*20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)*/
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-style: dotted;
+    border-color: red;
+}
