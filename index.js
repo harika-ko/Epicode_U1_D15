@@ -157,6 +157,50 @@ function addRow() {
     row.innerText = "Hello! I am the new row"
 }
 
+//36) Write a function to add a class of "test" to each row in the table
+
+function addClass() {
+    let rowNode = document.getElementsByTagName("tr")
+    for (let i = 0; i < rowNode.length; i++) {
+        rowNode[i].classList.add("test")
+    }
+}
+
+//37) Write a function to add a red background to every link in the page
+
+function addBgColor() {
+    let linksNode = document.getElementsByTagName("a")
+    for (let i = 0; i < linksNode.length; i++) {
+        linksNode[i].style.backgroundColor = "red"
+    }
+}
+
+//38) Console log "Page loaded" when the page is correctly loaded
+
+window.onload = function () {
+    console.log("Page loaded")
+}
+
+//39) Write a function to add new items to a unordered list
+
+function addNewItems() {
+    let ulListNode = document.getElementsByTagName("ul")
+    let newul = document.createElement("li")
+    newul.innerText = "New list item added!"
+    for (let i = 0; i < ulListNode.length; i++) {
+        ulListNode[i].appendChild(newul)
+    }
+}
+
+//40) Write a function to empty a list
+
+function emptyList() {
+    let ulListNode = document.getElementsByTagName("ul")
+    for (let i = 0; i < ulListNode.length; i++) {
+        ulListNode[i].classList.add("visibility")
+    }
+}
+
 
 
 
