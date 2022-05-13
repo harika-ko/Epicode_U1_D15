@@ -24,3 +24,32 @@ DOM EXERCISES
 39) Write a function to add new items to a unordered list
 40) Write a function to empty a list
 */
+
+
+
+//21) Given variables x = "John" and y = "Doe", write on the console "John <> Doe"
+
+let x = "John"
+let y = "Doe"
+console.log(x + " <> " + y)
+
+//22) Create an object with properties such name, surname, email
+
+let myDetails = { name: "Harika", surname: "Kommuri", email: "harikakommuri35@gmail.com" }
+
+//23) Delete the email property from the previously created object
+
+delete myDetails.email
+console.log(myDetails)
+
+//24) Create an array with 10 strings in it
+
+strArray = ["string1", "string2", "string3", "string4", "string5", "string6", "string7", "string8", "string9", "string10"]
+
+
+//25) Print in the console every string from the previous array
+
+for (let i = 0; i < strArray.length; i++) {
+    console.log(strArray[i])
+}
+
