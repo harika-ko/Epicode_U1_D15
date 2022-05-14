@@ -242,6 +242,83 @@ function showOrHideTable() {
     tableNode.classList.toggle("visibility")
 }
 
+//44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+
+//45) Delete the last letter from the heading each time the user clicks on it
+
+function removeLetters() {
+    let headingNode = document.getElementById("heading")
+    headingNode.addEventListener("click", function (e) {
+        headingNode.textContent = headingNode.textContent.slice(0, -1)
+    })
+}
+
+
+//46) Change the background color of a <td> if the user clicks on it
+
+function changeBgColor() {
+    let tdNode = document.getElementsByTagName("td")
+    for (let i = 0; i < tdNode.length; i++) {
+        tdNode[i].addEventListener("click", function (e) {
+            tdNode[i].style.backgroundColor = "blue"
+        })
+    }
+}
+
+//47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+
+function deleteRandomTd() {
+
+    let tdNode = document.getElementsByTagName("td")
+    let currentIndex = tdNode.length
+    let randomIndex = Math.floor(Math.random() * currentIndex)
+    tdNode[randomIndex].remove()
+}
+
+//48) Add automatically a pink border to a cell when the mouse hovers it
+
+function addBorderColor() {
+    let tdNode = document.getElementsByTagName("td")
+    for (let i = 0; i < tdNode.length; i++) {
+        tdNode[i].addEventListener("mouseover", function (e) {
+            tdNode[i].style.borderColor = "pink"
+        })
+    }
+}
+
+
+//49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+
+function createTable() {
+    let myTableDiv = document.getElementById("newTable")
+
+    let table = document.createElement('table')
+
+    let tableBody = document.createElement('tbody')
+    table.appendChild(tableBody)
+
+    for (let i = 0; i < 3; i++) {
+        let tr = document.createElement('tr')
+        tableBody.appendChild(tr)
+
+        for (let j = 0; j < 4; j++) {
+            let td = document.createElement('td')
+            td.appendChild(document.createTextNode("Cell " + i + "," + j))
+            tr.appendChild(td)
+        }
+    }
+    myTableDiv.appendChild(table)
+}
+
+//50) Write a function to remove the last table from the page
+
+function removeLastTable() {
+    let tableNode = document.getElementsByClassName("table")
+    let lastTable = tableNode[tableNode.length - 1]
+    lastTable.remove()
+}
+
+
 
 
 

@@ -28,7 +28,7 @@
 
 <body>
     <!--2) Create a heading of your choice-->
-    <h1>Welcome to Epicode Botique</h1>
+    <h1 id="heading">Welcome to Epicode Botique</h1>
 
     <!--3) Create an ordered list with some list items into it-->
     <ul>
@@ -39,7 +39,7 @@
     </ul>
 
     <!--4) Create a table with 5 columns and 4 rows-->
-    <table id="table">
+    <table id="table" class="table">
         <tr>
             <th>Costume</th>
             <th>Picture</th>
@@ -122,6 +122,11 @@
 
     <input type="button" value="Click here to Show/Hide Table" onclick="showOrHideTable()">
     <br><br>
+
+    <input type="button" value="Click here to delete Random td" onclick="deleteRandomTd()">
+    <br><br>
+
+    <div id="newTable" class="table"></div>
 
     <!--10) Create a footer with some information about the page creator-->
     <footer>Epicode Botique was launched in 2022 by Harika in Germany <br>
